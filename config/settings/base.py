@@ -72,6 +72,7 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'omnik.users.apps.UsersConfig',
+    'polls.apps.PollsConfig',
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -184,7 +185,7 @@ TEMPLATES = [
                 ('pypugjs.ext.django.Loader', (
                     'django.template.loaders.filesystem.Loader',
                     'django.template.loaders.app_directories.Loader',
-                )) 
+                ))
             ],
             'builtins': ['pypugjs.ext.django.templatetags'],  # Remove this line for Django 1.8
             # https://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors
